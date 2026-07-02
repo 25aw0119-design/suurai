@@ -743,6 +743,7 @@ a {
   height: 100%;
   object-fit: contain;
   display: block;
+  transition: 0.5s;
 }
 
 .work-image span {
@@ -768,11 +769,10 @@ a {
 
 .work-image:hover img {
   transform: scale(1.04);
-  filter: grayscale(15%);
 }
 
 .work-image:hover::after {
-  opacity: 1;
+  opacity: 0.6;
 }
 
 .work-image:hover span {
