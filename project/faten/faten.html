@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>スウライのポートフォリオ|ホームページ</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <script src="../../js/script.js" defer></script>
+  </head>
+  <body class="jinjya">
+    <header class="site-header">
+      <nav class="nav-container">
+        <a href="../../index.html" class="logo">
+          <img src="../../img/logo.svg" alt="スウライのポートフォリオ" />
+        </a>
+        <ul class="nav-inner">
+          <li><a href="#strength">Strength</a></li>
+          <li><a href="#skill">Skill</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="mailto:25aw0119@jec.ac.jp">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="project">
+        <section class="project-mainvisual">
+          <video controls autoplay muted loop playsinline>
+            <source src="video/faten.mp4" type="video/mp4" />
+          </video>
+        </section>
+
+        <!-- ここに作品概要 -->
+
+        <div class="project-head">
+          <h2>作品概要</h2>
+        </div>
+        <div class="project-info">
+          <div class="info-item">
+            <span>目的</span>
+            <p>診断とタロットを使い自分 に合う本に導くアプリ</p>
+          </div>
+
+          <div class="info-item">
+            <span>ターゲット</span>
+            <p>
+              20~25代ので一人暮らしを始め、孤独の時間は
+              自分の気分に深く浸りたい人 （自分の時間が欲しい人）
+            </p>
+          </div>
+
+          <div class="info-item">
+            <span>担当</span>
+            <p>
+              ページデザイン、アニメーション、画面遷移を実装し、Node.js（Express）で構築したバックエンドとGoogle
+              Books APIを連携させ、
+              カードの結果に応じておすすめ書籍を取得・表示する機能を開発しました。
+            </p>
+          </div>
+
+          <div class="info-item">
+            <span>制作期間</span>
+            <p>授業時間を中心にチームで取り組み、約2か月かけて制作しました。</p>
+          </div>
+
+          <div class="info-item">
+            <span>使用ツール</span>
+            <p>TypeScript、JavaScript、React 、Node.js、Expo</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="project">
+        <div class="project-head">
+          <h2>工夫した点</h2>
+        </div>
+
+        <p class="project-text">
+          ユーザーが楽しみながら利用できるよう、
+          画面遷移やアニメーションを工夫し、
+          タロットカードを引くワクワク感を演出しました。バックエンドとGoogle
+          Books
+          APIを連携し、カードごとに異なるおすすめ書籍を表示できるよう実装しました。APIの取得に失敗した場合でも表示できるよう、フォールバック処理も取り入れています。
+        </p>
+      </section>
+
+      <section class="project">
+        <div class="project-head">
+          <h2>学んだこと</h2>
+        </div>
+
+        <p class="project-text">
+          React Nativeによるアプリ開発だけでなく、
+          Node.jsを用いたバックエンドとの連携やAPI通信の流れを学びました。
+          チーム開発を通して、
+          役割分担や進捗共有などコミュニケーションの重要性も実感しました。
+        </p>
+      </section>
+
+      <section class="design-section">
+        <div class="section-title">
+          <h2>完成デザイン</h2>
+        </div>
+
+        <div class="design-text">
+          <p>
+            世界観を統一するために、配色・タイポグラフィ・アニメーションを意識し、<br />
+            シンプルで操作しやすいデザインに仕上げました。
+          </p>
+        </div>
+         <div class="gallery">
+          <div class="tarot-design-image">
+            <img src="img/faten1.jpg" alt="ポートフォリオ完成デザイン" />
+            <img src="img/faten2.jpg" alt="ポートフォリオ完成デザイン" />
+            <img src="img/faten3.jpg" alt="ポートフォリオ完成デザイン" />
+            <img src="img/faten4.jpg" alt="ポートフォリオ完成デザイン" />
+            <img src="img/faten12.png" alt="ポートフォリオ完成デザイン" />
+            <img src="img/faten5.jpg" alt="ポートフォリオ完成デザイン" />
+            <img src="img/faten6.jpg" alt="ポートフォリオ完成デザイン" />
+            <img src="img/faten7.jpg" alt="ポートフォリオ完成デザイン" />
+            <img src="img/faten8.jpg" alt="ポートフォリオ完成デザイン" />
+            <img src="img/faten9.jpg" alt="ポートフォリオ完成デザイン" />
+            <img src="img/faten10.jpg" alt="ポートフォリオ完成デザイン" />
+            <img src="img/faten11.jpg" alt="ポートフォリオ完成デザイン" />
+          </div>
+       
+          <button class="gallery-btn prev">&#10094;</button>
+            <button class="gallery-btn next">&#10095;</button>
+        </div>
+      </section>
+    </main>
+
+    <section class="next-project">
+      <p class="next-label">NEXT PROJECT</p>
+      <div class="next-work"></div>
+    </section>
+
+    <footer class="site-footer">
+      <p class="footer-bg">CONTACT</p>
+      <div class="footer-inner">
+        <h2>Let’s work<br />together.</h2>
+        <a href="mailto:25aw0119@jec.ac.jp">25aw0119@jec.ac.jp</a>
+      </div>
+      <p class="copyright">© 2026 Suirai Portfolio. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

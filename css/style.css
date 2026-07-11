@@ -954,16 +954,20 @@ a {
   opacity: 1;
   transform: translateY(0);
 }
-
-/* ===========================
-   Project Detail
-=========================== */
-
 .project-mainvisual {
   max-width: 1200px;
   margin: 120px auto 100px;
+  background-image: url(../project/faten/video/mp4_back.png);
+  background-repeat: no-repeat;
+  border-radius: 20px;
 }
-
+.project-mainvisual video {
+  width: 30%;
+  padding: 20px;
+  display: block;
+  border-radius: 16px;
+  margin: 0 auto;
+}
 .project-mainvisual img {
   width: 100%;
   display: block;
@@ -1095,7 +1099,6 @@ a {
   max-width: 280px;
   justify-self: center;
   border: 10px solid #555555;
-
 }
 
 .jinjya-design-image {
@@ -1105,17 +1108,56 @@ a {
   gap: 40px;
 }
 
-.jinjya-design-image img{
+.jinjya-design-image img {
   width: 250px;
 }
 
 .pocket-design-image {
-    display: grid;
+  width: 1000px;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 20px;
 }
 
+.tarot-design-image {
+  width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+.gallery {
+    position: relative;
+}
+.gallery-btn {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 80px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(92, 88, 155, 0.956);
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+.gallery-btn.prev {
+  left: -15px;
+}
+
+.gallery-btn.next {
+  right: -15px;
+}
+
+.gallery-btn:hover {
+  background: rgba(52, 8, 102, 0.956);
+}
 
 /* Mobile */
 
@@ -1150,9 +1192,34 @@ a {
     display: none;
   }
 
-  .project-mainvisual {
-    max-width: 1200px;
-    margin: 0 auto 100px;
+  .tarot-design-image {
+    display: flex;
+    overflow-x: auto;
+    gap: 0;
+    width: 100%;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .tarot-design-image::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tarot-design-image img {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 0 60px;
+    box-sizing: border-box;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    object-fit: contain;
+  }
+  .gallery-btn {
+  display:block;
   }
 }
 
@@ -1220,4 +1287,15 @@ a {
   .works-section {
     padding: 100px 6%;
   }
+
+  .tarot-design-image img {
+    padding: 0 70px;
+  }
+}
+
+@media (max-width: 520px) {
+  .tarot-design-image img {
+    padding: 0 60px;
+  }
+
 }

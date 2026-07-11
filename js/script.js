@@ -27,7 +27,9 @@ moveCursor();
 
 document.querySelectorAll("a, button").forEach((item) => {
   item.addEventListener("mouseenter", () => cursor?.classList.add("is-hover"));
-  item.addEventListener("mouseleave", () => cursor?.classList.remove("is-hover"));
+  item.addEventListener("mouseleave", () =>
+    cursor?.classList.remove("is-hover"),
+  );
 });
 
 window.addEventListener("scroll", () => {
@@ -41,7 +43,7 @@ window.addEventListener("scroll", () => {
 });
 
 const revealTargets = document.querySelectorAll(
-  ".section-head, .strength-item, .skill-column, .work-card, .footer-inner"
+  ".section-head, .strength-item, .skill-column, .work-card, .footer-inner",
 );
 
 revealTargets.forEach((target) => target.classList.add("reveal"));
@@ -54,7 +56,7 @@ const observer = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.16 }
+  { threshold: 0.16 },
 );
 
 revealTargets.forEach((target) => observer.observe(target));
@@ -75,7 +77,6 @@ if (hamburger && nav) {
     });
   });
 }
-
 
 const works = [
   {
@@ -110,6 +111,14 @@ const works = [
     url: "../jinjya/jinjya.html",
     tools: "企画 / Figma / Illustrator / Photoshop",
   },
+  {
+    page: "faten.html",
+    title: "Faten（アプリ）",
+    tag: "#授業課題",
+    image: "../../img/faten_bg.jpg",
+    url: "../faten/faten.html",
+    tools: "TypeScript、JavaScript、React 、Node.js、Expo",
+  },
 ];
 const nextWorkArea = document.querySelector(".next-work");
 
@@ -133,4 +142,35 @@ if (nextWorkArea) {
       </a>
     `;
   }
+}
+
+const gallery = document.querySelector(".tarot-design-image");
+const next = document.querySelector(".gallery-btn.next");
+const prev = document.querySelector(".gallery-btn.prev");
+
+if (gallery && next && prev) {
+  const cards = gallery.querySelectorAll("img");
+
+  let index = 0;
+
+  function move() {
+    gallery.scrollTo({
+      left: index * gallery.clientWidth,
+      behavior: "smooth",
+    });
+  }
+
+  next.onclick = () => {
+    if (index < cards.length - 1) {
+      index++;
+      move();
+    }
+  };
+
+  prev.onclick = () => {
+    if (index > 0) {
+      index--;
+      move();
+    }
+  };
 }
