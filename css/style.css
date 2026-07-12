@@ -1191,6 +1191,14 @@ a {
   .scroll-sign {
     display: none;
   }
+  
+.project-mainvisual video {
+  width: 80%;
+  padding: 20px;
+  display: block;
+  border-radius: 16px;
+  margin: 0 auto;
+}
 
   .tarot-design-image {
     display: flex;
@@ -1221,6 +1229,7 @@ a {
   .gallery-btn {
   display:block;
   }
+  
 }
 
 @media (max-width: 900px) {
