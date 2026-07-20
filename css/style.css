@@ -587,9 +587,7 @@ a {
 
 .skill-wrap {
   display: grid;
-
   grid-template-columns: repeat(2, 1fr);
-
   gap: 90px;
 }
 
@@ -597,14 +595,22 @@ a {
 
 .group-title {
   margin-bottom: 30px;
-
   color: #b9b9b9;
-
   font-size: 13px;
-
   text-transform: uppercase;
-
   letter-spacing: 0.35em;
+}
+.group-learnTitle {
+  margin-top: 70px;
+    margin-bottom: 30px;
+  color: #b9b9b9;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.35em;
+}
+.card.learning {
+  display: grid;
+  gap: 10px;
 }
 
 /* ---------- Card ---------- */
@@ -681,6 +687,31 @@ a {
 
 .group .card:hover p {
   transform: translateX(6px);
+}
+
+.group-now {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr ;
+
+gap: 10px;
+
+}
+.learning {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .05em;
+  color: #f59e0b;
+  background: #fff8e6;
+  border: 1px solid #f6c453;
 }
 
 /* Responsive */
@@ -865,7 +896,8 @@ a {
   letter-spacing: 0.15em;
 }
 
-.next-info h2 {
+.next-info 
+ {
   margin-top: 12px;
   color: #222;
   font-size: clamp(32px, 5vw, 64px);
@@ -965,14 +997,16 @@ a {
   width: 30%;
   padding: 20px;
   display: block;
-  border-radius: 16px;
   margin: 0 auto;
+
 }
 .project-mainvisual img {
   width: 100%;
   display: block;
   object-fit: cover;
   border: 1px solid #eee;
+  
+  
 }
 
 .project {
@@ -1120,13 +1154,7 @@ a {
   gap: 20px;
 }
 
-.tarot-design-image {
-  width: 1000px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 20px;
-}
+
 .gallery {
     position: relative;
 }
@@ -1158,7 +1186,16 @@ a {
 .gallery-btn:hover {
   background: rgba(52, 8, 102, 0.956);
 }
-
+.tarot-design-image {
+  width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+.tarot-design-image img {
+  border-radius: 20px;
+}
 /* Mobile */
 
 @media (max-width: 768px) {
@@ -1196,7 +1233,6 @@ a {
   width: 80%;
   padding: 20px;
   display: block;
-  border-radius: 16px;
   margin: 0 auto;
 }
 
