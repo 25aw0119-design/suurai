@@ -991,7 +991,7 @@ a {
   border-radius: 20px;
 }
 .project-mainvisual video {
-  width: 30%;
+  width: 100%;
   padding: 20px;
   display: block;
   margin: 0 auto;
