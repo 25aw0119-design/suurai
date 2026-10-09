@@ -80,12 +80,34 @@ if (hamburger && nav) {
 
 const works = [
   {
+    page: "faten.html",
+    title: "Faten（アプリ）",
+    tag: "#授業課題",
+    image: "../../img/faten_bg.jpg",
+    url: "../faten/faten.html",
+    tools: "TypeScript、JavaScript、React 、Node.js、Expo",
+  },
+  {
     page: "potoforio.html",
     title: "ポートフォリオ",
     tag: "#本サイト",
     image: "../../img/potofp_shot.png",
     url: "../potoforio/potoforio.html",
     tools: "Figma / Illustrator / Photoshop / HTML / CSS / JavaScript",
+  },
+  {
+    page: "shopping.html",
+    title: "商店街",
+    image: "../../img/kibi.jpg",
+    url: "../shopping/shopping.html",
+    tools: "Illustrator",
+  },
+    {
+    page: "post.html",
+    title: "ポスター",
+    image: "../../img/aka.jpg",
+    url: "../post/post.html",
+    tools: "Illustrator",
   },
   {
     page: "resipi.html",
@@ -111,14 +133,7 @@ const works = [
     url: "../jinjya/jinjya.html",
     tools: "企画 / Figma / Illustrator / Photoshop",
   },
-  {
-    page: "faten.html",
-    title: "Faten（アプリ）",
-    tag: "#授業課題",
-    image: "../../img/faten_bg.jpg",
-    url: "../faten/faten.html",
-    tools: "TypeScript、JavaScript、React 、Node.js、Expo",
-  },
+  
 ];
 const nextWorkArea = document.querySelector(".next-work");
 

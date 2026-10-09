@@ -1002,12 +1002,12 @@ a {
   object-fit: cover;
   border: 1px solid #eee;
 }
+.project-mainvisual-post{
+width: 35%;
+margin: 0 auto;
 
-.project {
-  max-width: 1100px;
-  margin: 120px auto;
-  padding: 0 40px;
 }
+
 
 .project {
   max-width: 1100px;
@@ -1146,6 +1146,15 @@ a {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 20px;
+}
+.design-shopping-image {
+    display: grid;
+    gap: 80px;
+}
+.design-post-image{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
 }
 
 .gallery {
