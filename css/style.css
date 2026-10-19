@@ -1128,7 +1128,10 @@ margin: 0 auto;
   justify-self: center;
   border: 10px solid #555555;
 }
-
+.design-mohu-image {
+  width: 60%;
+  margin: 0 auto;
+}
 .jinjya-design-image {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

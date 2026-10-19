@@ -87,6 +87,16 @@ const works = [
     url: "../faten/faten.html",
     tools: "TypeScript、JavaScript、React 、Node.js、Expo",
   },
+
+   {
+    page: "mohu.html",
+    title: "電気毛布",
+    tag: "#EC商品　自主制作",
+    image: "../../img/mohu.jpg",
+    url: "../mohu/mohu.html",
+    tools: "Figma / Illustrator / Photoshop",
+  },
+
   {
     page: "potoforio.html",
     title: "ポートフォリオ",
